@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135 deg, #89f7fe, #66a6ff);
+}
+
+
+#welcome-page{
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 45px;
+    color: white;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+input{
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    padding: 12px, 25px;
+    font-size: 17px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ff1493;
+}
+
+#game-page{
+    display: none;
+    padding-top: 20px;
+}
+
+#bubble-container{
+    position: relative;
+    width: 90%;
+    height: 450px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 3px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: absolute;
+    bottom: -60px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: float-up 5s linear forwards;
+}
+
+@keyframes float-up{
+    from{
+        bottom: -60px;
+    }
+
+    to{
+        bottom: 500px;
+    }
+}
+
+#game-over{
+    display: none;
+    color: white;
+}
+
+#restart-button{
+    display: none;
+}
